@@ -62,16 +62,17 @@ The title of the posts should be `2020-12-27-your-post-title.md`. You can also m
 
 #### 7. Run on the server
 
-You can build page and start local web server
+You can build page and start local web server. 
 ```commandline
 jekyll serve
 ```
-You can access to the local website with `localhost:4000` or of course with `127.0.0.1:4000`
-\
+You can access to the local website with `localhost:4000` or of course with `127.0.0.1:4000`. It's only for 
 If you want to change the port number, add `--port <port number>`
+  
+  
 
-
-You can just build page into  `_site`  folder without running local web server
+`serve` is for developing while `build` is for hosting. 
+You can build page into  `_site`  folder when deploying it.
 
 ```commandline
 jekyll build
