@@ -1,0 +1,19 @@
+name: You Make My Day
+description: Things that I want to remember. New knowledge about IT, programming, etc.
+meta_description: "New knowledge about IT, programming, etc."
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 10
+baseurl: ""
+domain_name: "https://ksh04023.github.io"
+google_analytics: "UA-XXXXXXXX-X"
+plugins: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url: ""
+author: "Your Name"
+
+# Disqus config
+disqus-shortname: ""
