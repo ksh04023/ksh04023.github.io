@@ -14,7 +14,12 @@ I've considered several tools for making my own blog and I decided to make a git
 - Jekyll is a simple, static, blog-aware framework website generator written in Ruby. You can refer to the [Jekyll docs](https://jekyllrb.com) or [Github repository](https://github.com/jekyll/jekyll).
 - You can make your own blog in a very simple way using Jekyll, which can be easily hosted using [Github Pages](https://pages.github.com/). 
 
+
+
+
 ### Let's get started
+  
+  
 #### 1. Download & Install Ruby
 If you haven't installed Ruby, you have to install it first. From [here]([https://rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/)), I downloaded `Ruby+Devkit 2.6.6-2 (x64)` (because I have an 64-bit OS) and installed it with the default settings. If you have 32-bit OS, you can download one with `(x86)`.
 
@@ -37,25 +42,25 @@ You can make your own one by renaming the forked (or copied) repository, with `<
 
 #### 4. Install Jekyll
 There must be a `Gemfile` in your folder. Change directory to the folder containing `Gemfile`. Follow the commands below.
-```
+```commandline
 gem install jekyll
 gem install jekyll-paginate
 ```
 #### 5. Change _config.yml
-```
+```yaml
 baseurl: ""
 domain_name: "https://<username>.github.io"
 ```
 #### 6. How to use it
 
 Build page and start local web server
-```
+```commandline
 jekyll serve
 ```
 
 Build page into  `_site`  folder
 
-```
+```commandline
 jekyll build
 ```
 
