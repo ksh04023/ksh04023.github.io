@@ -51,19 +51,35 @@ gem install jekyll-paginate
 baseurl: ""
 domain_name: "https://<username>.github.io"
 ```
-#### 6. How to use it
+#### 6. Edit your post
+You can add posts in `_posts` folder. The sample post is already in the folder so that you can follow the format.
+The title of the posts should be `2020-12-27-your-post-title.md`. You can also make sub-directories like
+```
+- _posts/
+  - Github/
+    - 2020-12-27-make-your-own-blog-with-github-pages.md
+```
 
-Build page and start local web server
+#### 7. Run on the server
+
+You can build page and start local web server
 ```commandline
 jekyll serve
 ```
+You can access to the local website with `localhost:4000` or of course with `127.0.0.1:4000`
+\
+If you want to change the port number, add `--port <port number>`
 
-Build page into  `_site`  folder
+
+You can just build page into  `_site`  folder without running local web server
 
 ```commandline
 jekyll build
 ```
 
+#### 8. Push files to your repository
+Push all the changed files to your repo, and wait until the changes to be applied.
+(Push `F5`)
 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
