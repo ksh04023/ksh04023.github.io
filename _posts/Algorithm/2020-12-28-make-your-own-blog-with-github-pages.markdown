@@ -12,8 +12,7 @@ I've considered several tools for making my own blog and I decided to make a git
 <img src="https://jekyllrb.com/img/logo-2x.png" alt="drawing" height="100"/>
 
 - Jekyll is a simple, static, blog-aware framework website generator written in Ruby. You can refer to the [Jekyll docs](https://jekyllrb.com) or [Github repository](https://github.com/jekyll/jekyll).
-- You can write your post in an easy way using markdown, which can be transferred to HTML by Jekyll.
-- It can be easily hosted using [Github Pages](https://pages.github.com/). 
+- You can make your own blog in a very simple way using Jekyll, which can be easily hosted using [Github Pages](https://pages.github.com/). 
 
 
 
@@ -38,9 +37,7 @@ I chose the one on the top - [Kasper](https://jekyll-themes.com/kasper/), the si
 2. Download ZIP file
 [image2] - how to download the zip file
 
-If you want your blog works to affect your contribution graph on the github main page, #2 would be better. (commits on a forked repo are not counted)
-\
-\
+
 You can make your own one by renaming the forked (or copied) repository, with `<username>.github.io`. or `<organization>.github.io` when it's owned by an organization. Now you can access to your own blog with the url `https://<username>.github.io`
 
 #### 4. Install Jekyll
@@ -83,7 +80,7 @@ jekyll build
 
 #### 8. Push files to your repository
 Push all the changed files to your repo, and wait until the changes to be applied.
-(Push `F5`😛)
+(Push `F5`)
 
 
 
