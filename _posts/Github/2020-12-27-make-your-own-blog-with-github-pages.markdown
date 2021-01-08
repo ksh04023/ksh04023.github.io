@@ -2,7 +2,7 @@
 layout: post
 title:  "Make your own blog with Github Pages"
 date:   2020-12-27 19:26:00
-categories: Github
+category: Github
 ---
 \
 For my very first post in my new technical blog, I'm going to give an example how to make a github blog.

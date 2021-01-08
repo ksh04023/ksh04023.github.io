@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Set Title Background Image"
 date:   2020-12-28 19:26:00
-categories: Github
+category: Github
 ---
 \
 Let's see how to change the background image. As a web front-end newbie, I was wandering about how to change the title background.
