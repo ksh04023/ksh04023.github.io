@@ -2,6 +2,21 @@
  * Main JS file for Casper behaviours
  */
 
+//스크롤 200px이상일때 박스 상단 따라다니기 및 배경색 변경
+$(window).scroll(function() {
+    console.log(Math.ceil($('.nav-item').offset().top))
+    console.log($(this).scrollTop())
+    if($(this).scrollTop() > 450) {
+        $(".main-nav").css('position','fixed');
+        $(".main-nav").css('background','#111111');
+    }
+    else {
+        $(".main-nav").css('position','fixed');
+        $(".main-nav").css('background','transparent');
+    }
+});
+
+
 /* globals jQuery, document */
 (function ($, sr, undefined) {
     "use strict";
