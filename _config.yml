@@ -10,6 +10,7 @@ baseurl: ""
 domain_name: "https://ksh04023.github.io"
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate, jekyll-image-size]
+category_list: [ Github, Algorithm]
 
 # Details for the RSS feed generator
 url: ""

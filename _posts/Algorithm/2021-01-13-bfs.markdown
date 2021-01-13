@@ -1,0 +1,80 @@
+---  
+layout: post  
+title:  "BFS(Breadth First Search) 탐색 알고리즘"  
+date:   2021-01-13 13:26:00  
+category: Github
+---  
+ 아래 내용은 나동빈 저자의 \<이것이 코딩 테스트다\> 라는 책을 참고한 것입니다. 
+https://github.com/ndb796/python-for-coding-test
+ 
+1. BFS란?
+2. BFS 구현하기
+
+
+## 1. BFS 란?
+
+BFS(Breadth First Search) 알고리즘은 '너비 우선 탐색'의 의미를 가진다.
+BFS는 **선입선출 방식**인 큐 자료구조를 이용한다.
+
+<img src="https://i.ibb.co/4jzkQpz/queue.png" alt="queue" border="0">
+
+Python에는 deque라는 라이브러리가 있어 쉽게 구현할 수 있다.
+
+```python
+from collections import deque
+```
+를 추가하여 사용한다. 탐색을 수행할 때 O(N)의 시간이 소요되어, 일반적으로 DFS보다 좋은 편이다.
+
+## 2. BFS 구현하기
+1. 탐색 시작 노드를 큐에 삽입하고 방문 처리를 한다.
+2. 큐에서 노드를 꺼내 해당 노드의 인접 노드 주엥서 방문하지 않은 노드를 모두 큐에 삽입하고 방문 처리를 한다.
+3. 2번의 과정을 더 이상 수행할 수 없을 때까지 반복한다.
+
+<img src="https://i.ibb.co/kcqf8gz/node.png" alt="node" border="0">
+
+위와 같은 노드로 구성된 그래프가 있다.
+
+- 1번 노드를 큐에 삽입하고 방문 처리를 한다.
+- 1번 노드와 연결된 노드인 2, 3, 8번 노드를 큐에 삽입하고 방문 처리를 한다.
+- 2번 노드를 꺼내고 방문하지 않은 노드인 7번 노드를 큐에 삽입하고 방문 처리를 한다.
+- 큐에 남은 노드가 없을 때까지 반복한다.
+
+이 때 방문했는지 확인하기 위해 노드 개수만큼의 Boolean Type 리스트를 생성한다.
+예시는 아래 쪽에 있습니다.
+
+```python
+from collections import deque
+
+def bfs(graph, start, visited):
+    #deque 라이브러리 사용
+    queue = deque([start])
+    #현재 노드를 방문 처리
+    visited[start] = True
+    #큐가 빌 때까지 반복
+    while queue:
+        #큐에서 하나의 원소를 뽑아 출력
+        v = queue.popleft()
+        print(v, end ='')
+        for i in graph[v]:
+            queue.append(i)
+            visited[i] = True
+
+#각 노드가 연결된 정보를 리스트 자료형으로 표현(2차원 리스트)
+graph = [
+    [],
+    [2,3,8],
+    [1,7],
+    [1,4,5],
+    [3,5],
+    [3,4],
+    [7],
+    [2,6,8],
+    [1,7]
+]
+
+#각 노드가 방문된 정보를 리스트 자료형으로 표현
+visited = [False] * 9
+
+bfs(graph, 1, visited)
+```
+
