@@ -12,6 +12,11 @@ google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate, jekyll-image-size]
 category_list: [ Github, Algorithm]
 
+# Math equation
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 # Details for the RSS feed generator
 url: ""
 author: "ksh04023"
