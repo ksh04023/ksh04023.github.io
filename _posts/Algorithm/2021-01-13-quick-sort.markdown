@@ -84,3 +84,28 @@ print(array)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+
+하지만 위와 같이 하나씩 세세히 구현하는 방법도 있는가하면, 파이썬의 특징을 이용해 아주 간결하게 코드를 짤 수도 있다고 한다.
+
+```python
+array = [7,5,9,0,3,1,6,2,4,8]
+
+def quick_sort(array):
+    if len(array) <= 1:
+        return array
+    
+    pivot = array[0]
+    tail = array[1:]
+    
+    #pivot보다 작은 값은 left_side로, 큰 값은 right_side로 나눔
+    left_side = [x for x in tail if x <= pivot]
+    right_side = [x for x in tail if x > pivot]
+
+    #left_side와 right_side를 각각 재귀적으로 quick sorting을 해줌
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+
+print(quick_sort(array))
+```
+
+위의 코드와 같은 결과가 나온다.
+간단하고 아주 좋다!
