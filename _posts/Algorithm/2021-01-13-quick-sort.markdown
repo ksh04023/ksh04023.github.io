@@ -22,11 +22,11 @@ comments: true
 
 1.3 둘의 자리를 바꾼다.
 <img src="https://i.ibb.co/1v9cb9D/quick2.png" alt="quick2" border="0">
-\
+
 
 1.4 이를 계속하다 보면 Pivot보다 다음과 같이 큰 데이터와 작은 데이터가 순서가 뒤바뀌는 상황이 오게된다. 
 <img src="https://i.ibb.co/Sm0xQs3/quick3.png" alt="quick3" border="0">
-\
+
 
 1.5 이 때는 선택한 두 데이터의 순서를 바꾸는 것이 아니라, 선택한 작은 수와 Pivot의 자리를 바꾼다.
 그러면 Pivot의 왼쪽에는 모두 Pivot보다 작은 수가 오게 되고 오른쪽에는 모두 Pivot보다 큰 수가 오게 된다.
@@ -79,7 +79,7 @@ quick_sort(array,0,len(array) - 1)
 print(array)
 
 ```
-✅결과
+➡ 결과
 ```
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
