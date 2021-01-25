@@ -7,8 +7,7 @@ use_math: true
 comments: true
 ---  
 
-
-### 프로젝트 파일 수행 방법
+#### 프로젝트 default 파일이 어떻게 동작하는가!
 create-react-app을 이용하면 여러 폴더와 파일들이 뜬다. 
 1. `index.js`의 역할
 여기서 `App.js` 파일 안에 있는 html 태그들을 public 폴더 안에 있는 `index.html` 파일 안에 넣어 달라는 명령을 한다.

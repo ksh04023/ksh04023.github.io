@@ -8,7 +8,7 @@ logo: false
 paginate: 10
 baseurl: ""
 domain_name: "https://ksh04023.github.io"
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "UA-188058866-1"
 plugins: [jekyll-paginate, jekyll-image-size]
 category_list: [ Github, Algorithm]
 
