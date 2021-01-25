@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title:  "리액트 프로젝트 기초"  
+title:  "리액트 프로젝트 기초(1) - Default 파일의 역할, Html 안에 변수 넣기"  
 date:   2021-01-21 17:14:00  
 category: Github
 use_math: true
@@ -49,6 +49,8 @@ App이라는 함수에 간단하게 html을 return 하도록 하면 된다.
 Data binding: 데이터를 제 자리에 집어 넣는 것
 
 - 변수 삽입하기
+
+**App.js**
 ```javascript
 function App(){
     let posts = 'your post';
@@ -62,12 +64,17 @@ function App(){
 ```
 
 - 함수 삽입하기
+
+다음과 같은 함수를 추가해준다.
+**App.js**
 ```javascript
 function result(){
     return 2 + 3;
 }
+```
 
-
+**App.js**
+```
 function App(){
     let posts = 'your post';
     
@@ -85,13 +92,17 @@ function App(){
 import logo from './logo.svg'
 ```
 
-`<img>` 태그 안에 source를 {}로 바로 넣어준다.
+`<img>` 태그 안에 source를 { }로 바로 넣어준다.
+
+**App.js**
 ```javascript
 <img src={ logo } />
 ```
 
 3. Style 속성 넣기
 object 자료형으로 스타일을 만들어 넣는다.
+
+**App.js**
 ```javascript
 <div style = {{color: 'blue', font-size : 30px }} >Your Title</div>
 ```
