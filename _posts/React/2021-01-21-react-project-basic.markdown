@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title:  "리액트 프로젝트 기초(1) - Default 파일의 역할, Html 안에 변수 넣기"  
+title:  "[React] 리액트 프로젝트 기초(1) - Default 파일의 역할, Html 안에 변수 넣기"  
 date:   2021-01-21 17:14:00  
 category: Github
 use_math: true

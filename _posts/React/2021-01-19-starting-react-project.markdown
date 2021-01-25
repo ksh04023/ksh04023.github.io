@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title:  "간편하게 리액트 프로젝트 시작하기"  
+title:  "[React] 간편하게 리액트 프로젝트 시작하기"  
 date:   2021-01-19 22:52:00  
 category: Github
 use_math: true
