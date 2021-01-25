@@ -16,6 +16,8 @@ comments: true
     - `onclick` => `onClick`
     - `class` => `className`
 
+---
+
 #### 1. Component 만들기
 
 - 만들고자 하는 Component의 이름을 가진 파일을 새로 만든다.
@@ -45,6 +47,8 @@ class MyButton extends Component {
 export default BtnCalendar;
 ```
 
+
+---
 
 #### 2. 버튼을 예쁘게 만들어 보자!
 
@@ -93,6 +97,35 @@ export default BtnCalendar;
 
 <img src="https://i.ibb.co/V3HzMxF/button-after-design.png" alt="button-after-design" border="0">
 
+<style type="text/css">
+    .btn {
+    	background-color:#405dffd7;
+      border-radius:13px;
+      border: 0;
+    	cursor:pointer;
+      color:#ffffff;
+      margin: 5vmax;
+      font-size:15px;
+    	padding:8px 33px;
+    	text-decoration:none;
+    }
+    
+    .btn:hover {
+    	background-color:#405dff;
+    }
+    .btn:active {
+      border: 0;
+      position:relative;
+    	top:0.5px;
+    }
+    .btn:focus {
+      border: none;
+      outline: none;
+    }
+</style>
+<button class = "btn" onclick= "function hi(){alert('Hi!')};hi()" >구글 캘린더 가져오기</button>
+
+---
 
 #### 3. App 화면에 삽입하기
 
