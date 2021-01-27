@@ -19,7 +19,7 @@ incremental: false
 
 # Details for the RSS feed generator
 url: ""
-author: "ksh04023"
+author: "Jihyo Kim"
 
 # Disqus config
 disqus-shortname: ""
