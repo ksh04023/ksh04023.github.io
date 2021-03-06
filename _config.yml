@@ -6,11 +6,12 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 10
+paginate_path: /page:num
 baseurl: ""
 domain_name: "https://ksh04023.github.io"
 google_analytics: "UA-188058866-1"
-plugins: [jekyll-paginate, jekyll-image-size]
-category_list: [ Github, Algorithm]
+plugins: [jekyll-paginate-v2, jekyll-image-size]
+category_list: [ Github, Algorithm, React]
 
 # Math equation
 lsi: false
